@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import './CSS/style.scss'
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter >
       <App />
     </BrowserRouter>
   </React.StrictMode>,

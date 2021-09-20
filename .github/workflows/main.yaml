@@ -1,0 +1,30 @@
+name: CI/CD
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  deploy:
+    name: deploy-my-daofind
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: "14.x"
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build My App
+        run: CI=false npm run build
+
+      - name: Deploy to my firebase
+        uses: w9jds/firebase-action@master
+        with:
+          args: deploy --only hosting
+        env:
+          FIREBASE_TOKEN: ${{secrets.FIREBASE_TOKEN}}
