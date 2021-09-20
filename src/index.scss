@@ -1,0 +1,44 @@
+body {
+  background-color: hsl(238, 19%, 35%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+h1 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.menu-container {
+  margin-left: 234px;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.app-container {
+  margin-left: 280px;
+  margin-top: 35px;
+  margin-bottom: 60px;
+  margin-right: 50px;
+  border-radius: 20px;
+  padding: 30px 40px 30px 40px;
+  background-color: var(--bg-secondary);
+  border-color: var(--border);
+  color: white;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+
+/* Small screens */
+@media only screen and (max-width: 900px) {
+  .menu-container {
+    margin-left: 50px;
+  }
+  .app-container {
+    margin-left: 50px;
+  }
+}
+

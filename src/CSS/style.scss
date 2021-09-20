@@ -1,0 +1,81 @@
+:root {
+  --main-color: #5846c3;
+  --main-colorLight: #bdb5ff;
+  --secondary-color: #282828;
+  --text-muted: #616578;
+  --b-primary:  linear-gradient(95.81deg,  hsl(238, 29%, 16%), 2.29%, hsl(238, 29%, 16%));
+  --bg-secondary: #222339;
+  --border: #31324b;
+}
+
+@import "./home.scss";
+@import "./sideBar.scss";
+@import "./dao.scss";
+@import "./search.scss";
+@import "./searchBar.scss";
+@import "./add.scss";
+@import "./learn.scss";
+
+body {
+  background-color: var(--b-primary);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+h1 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.menu-container {
+  margin-left: 234px;
+  padding-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.app-container {
+  margin-left: 280px;
+  margin-top: 35px;
+  margin-bottom: 60px;
+  margin-right: 50px;
+  border-radius: 20px;
+  padding: 30px 40px 30px 40px;
+  background: var(--b-primary);
+  border-color: var(--border);
+  color: white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Small screens */
+@media only screen and (max-width: 900px) {
+  .menu-container {
+    margin: 10px;
+  }
+  .app-container {
+    margin: 10px;
+  }
+}
+  
+  

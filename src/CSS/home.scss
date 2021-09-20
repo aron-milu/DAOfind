@@ -1,0 +1,177 @@
+.home {
+    .summary {
+      display: flex;
+      justify-content: space-between;
+  
+      .card {
+        background-color: var(--main-color);
+        width: 48%;
+        box-shadow: 0 20px 50px rgba(59, 43, 91, 0.7);
+  
+        .card-text {
+          font-size: 20px;
+        }
+      }
+    }
+  
+    .categories {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      button {
+        letter-spacing: 1px;
+        border-radius: 9999px;
+        background-color: var(--text-muted);
+        color: white;
+        padding: 0px 10px 0px 10px;
+        border: none;
+        margin-right: 10px;
+        margin-top: 10px;
+      }
+      .active {
+        background-color: var(--main-color);
+      }
+  
+      .filter-btn {
+        margin-top: 0px;
+        padding: 10px 10px 10px 10px;
+        letter-spacing: 1px;
+        background-color: var(--bg-secondary);
+        border: 2px solid var(--text-muted) !important;
+        border-radius: 10px;
+        svg {
+          display: inline-block;
+          margin-top: -3px;
+          margin-right: 4px;
+          vertical-align: middle;
+        }
+      }
+  
+      .filter-btn:hover {
+        background-color: var(--text-muted) !important;
+      }
+    }
+  
+    .Select {
+      &.is-focused {
+        box-shadow: 0px 0px 10px #ffeb3b !important;
+      }
+    }
+    .filter-options {
+      height: 100px;
+      display: flex;
+      div {
+        flex-grow: 1;
+        h3 {
+          font-size: 12px;
+        }
+      }
+  
+      .date-founded,
+      .total-value-locked,
+      .blockchain {
+        padding-right: 20px;
+        div {
+          div {
+            div:first-child {
+              flex-grow: 10;
+            }
+          }
+        }
+      }
+    }
+  
+    .hide-filter-options {
+      display: none;
+    }
+    hr {
+      margin: 2px;
+      border-color: var(--border);
+    }
+    .dao-header {
+      color: white;
+      font-weight: normal;
+      font-size: 13px;
+  
+      button {
+        height: 40px;
+        line-height: 40px;
+        background: none;
+        color: white;
+        text-align: left;
+        border: none;
+        margin: 6px;
+        border-radius: 10px;
+        padding: 5px !important;
+        padding-left: 10px !important;
+      }
+      button:nth-child(4) {
+        line-height: 20px;
+      }
+      button:hover {
+        background-color: var(--bg-primary);
+      }
+  
+      div {
+        margin: 6px;
+        padding: 5px !important;
+        padding-left: 10px !important;
+      }
+    }
+    .dao-header,
+    .dao-card {
+      display: flex;
+      button:nth-child(1),
+      div:nth-child(1) {
+        width: 25%;
+      }
+      button:nth-child(2),
+      div:nth-child(2) {
+        width: 10%;
+      }
+      button:nth-child(3),
+      div:nth-child(3) {
+        width: 20%;
+      }
+      button:nth-child(4),
+      div:nth-child(4) {
+        width: 13%;
+      }
+      button:nth-child(5),
+      div:nth-child(5) {
+        width: 13%;
+      }
+      button:nth-child(6),
+      div:nth-child(6) {
+        width: 10%;
+      }
+    }
+    .dao-card {
+      display: flex;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      button {
+        button > button {
+          width: 100%;
+        }
+      }
+  
+      svg {
+        height: 30px;
+        width: 50%;
+      }
+    }
+    .dao-card:hover {
+      background-color: var(--bg-primary);
+    }
+  
+    .no-results {
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 30px;
+    }
+  }
+  
